@@ -3,6 +3,9 @@
   "outputDirectory": "dist",
   "cleanUrls": false,
   "rewrites": [
-    { "source": "/remoteEntry.js", "destination": "/remoteEntry.js" }
+    {
+      "source": "/remoteEntry.js",
+      "destination": "/remoteEntry.js"
+    }
   ]
 }
