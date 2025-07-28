@@ -1,5 +1,5 @@
 {
-  "buildCommand": "vite build && copy dist\\assets\\remoteEntry.js dist\\remoteEntry.js",
+  "buildCommand": "vite build && cp dist/assets/remoteEntry.js dist/remoteEntry.js",
   "outputDirectory": "dist",
   "cleanUrls": false,
   "rewrites": [
