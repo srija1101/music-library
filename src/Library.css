@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+.library-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.library-container h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #1db954; /* Spotify Green */
+}
+
+.library-container p {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.controls input,
+.controls select {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #2a2a2a;
+  color: white;
+  outline: none;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.song-card {
+  background-color: #2a2a2a;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.song-card:hover {
+  background-color: #333;
+}
+
+.song-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-details .title {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.song-details .artist {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.add-btn {
+  margin-top: 12px;
+  background-color: #1db954;
+  color: black;
+  font-weight: bold;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-btn:hover {
+  background-color: #1ed760;
+}
+
+.delete-btn {
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.group-heading {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #ccc;
+  border-bottom: 1px solid #333;
+  padding-bottom: 4px;
+}
