@@ -20,7 +20,7 @@ export default defineConfig({
     cssCodeSplit: false,
     outDir: 'dist',
     rollupOptions: {
-      preserveEntrySignatures: 'strict', // ✅ important to stop it going into assets
+      preserveEntrySignatures: 'strict', 
       output: {
         entryFileNames: '[name].js',
         chunkFileNames: '[name].js',
