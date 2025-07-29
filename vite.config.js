@@ -9,7 +9,7 @@ export default defineConfig({
       name: 'music_library',
       filename: 'remoteEntry.js',
       exposes: {
-        './Library': './src/Library.jsx'
+        './Library': './src/Library.jsx',
       },
       shared: ['react', 'react-dom']
     })
@@ -20,7 +20,7 @@ export default defineConfig({
     cssCodeSplit: false,
     outDir: 'dist',
     rollupOptions: {
-      preserveEntrySignatures: 'strict', 
+      preserveEntrySignatures: 'strict',
       output: {
         entryFileNames: '[name].js',
         chunkFileNames: '[name].js',
