@@ -7,25 +7,26 @@ export default defineConfig({
     react(),
     federation({
       name: 'music_library',
-      filename: 'remoteEntry.js',
+      filename: 'remoteEntry.js', // ✅ no ./ here!
       exposes: {
         './Library': './src/Library.jsx',
       },
-      shared: ['react', 'react-dom']
-    })
+      shared: ['react', 'react-dom'],
+    }),
   ],
   build: {
     target: 'esnext',
     minify: false,
     cssCodeSplit: false,
     outDir: 'dist',
+    assetsDir: '', // ✅ forces files to go to dist root
     rollupOptions: {
       preserveEntrySignatures: 'strict',
       output: {
         entryFileNames: '[name].js',
         chunkFileNames: '[name].js',
-        assetFileNames: '[name].[ext]'
-      }
-    }
-  }
+        assetFileNames: '[name].[ext]',
+      },
+    },
+  },
 })
