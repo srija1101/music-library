@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     federation({
       name: 'music_library',
-      filename: 'remoteEntry.js', // ✅ no ./ here!
+      filename: 'remoteEntry.js', 
       exposes: {
         './Library': './src/Library.jsx',
       },
@@ -19,7 +19,7 @@ export default defineConfig({
     minify: false,
     cssCodeSplit: false,
     outDir: 'dist',
-    assetsDir: '', // ✅ forces files to go to dist root
+    assetsDir: '', 
     rollupOptions: {
       preserveEntrySignatures: 'strict',
       output: {
